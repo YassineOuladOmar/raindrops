@@ -41,6 +41,7 @@
             border-radius: 10px;
             text-align: center;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .inputten {
@@ -74,6 +75,7 @@
             min-width: 100%;
             min-height: 100%;
         }
+
     </style>
 </head>
 
@@ -89,13 +91,13 @@
     <main>
         <div class="form">
             <form>
-                Naam<br>
-                <input class="inputten" type="text" name="Naam" placeholder="what is your name?"><br><br>
-                E-Mail<br>
+                Naam
+                <input class="inputten" type="text" name="Naam" placeholder="what is your name?">
+                E-Mail
                 <input class="inputten" type="text" name="E-mail"
-                    placeholder="Please enter your current e-mail address"><br><br>
-                Age (optional)<br>
-                <input class="inputten" type="text" name="Age (optional)" placeholder="Please enter your age"><br><br>
+                    placeholder="Please enter your current e-mail address">
+                Age (optional)
+                <input class="inputten" type="text" name="Age (optional)" placeholder="Please enter your age">
                 <p> What is your current employment status?</p>
                 <span>
                     <p>Click or tap on it to choose</p>
@@ -110,11 +112,11 @@
                     <option value="Golf7">Golf7</option>
                 </select>
                 <p>Would you recommend Techgrounds to a riend?</p>
-                <input type="radio" name="gender" value="For sure!">For sure!<br>
-                <input type="radio" name="gender" value="Maybe">Maybe<br>
-                <input type="radio" name="gender" value="">No<br>
+                <div><input type="radio" name="gender" value="For sure!">For sure!</div>
+                <div><input type="radio" name="gender" value="Maybe">Maybe</div>
+                <div><input type="radio" name="gender" value="">No</div>
                 <input class="inputten" type="text" name="other"
-                    placeholder="Other: please tell us what's on your mind..."><br><br>
+                    placeholder="Other: please tell us what's on your mind...">
                 <p>What interests you most?</p>
                 <span>
                     <p>(click or tap on it to choose)</p>
@@ -128,18 +130,18 @@
                     <option value="MercedesS">Mercedes S</option>
                     <option value="MercedesGLE">Mercedes GLE</option>
                     <option value="MercedesGLA">Mercedes GLA</option>
-                </select><br><br>
+                </select>
                 <p>Which of the following needs improvements?</p>
                 <span>
                     <p>(Check all that apply)</p>
                 </span>
-                <input type="checkbox" name="auto1" value="mercedesA">Personal guidance<br>
-                <input type="checkbox" name="auto2" value="mercedesGLA">Homework<br>
-                <input type="checkbox" name="auto3" value="MercedesS">Challenges<br>
-                <input type="checkbox" name="auto4" value="Golf6">A Codewebbies WIKI<br>
-                <input type="checkbox" name="auto5" value="Golf7">No improvement needed!<br>
+                <div><input type="checkbox" name="auto1" value="mercedesA">Personal guidance</div>
+                <div><input type="checkbox" name="auto2" value="mercedesGLA">Homework</div>
+                <div><input type="checkbox" name="auto3" value="MercedesS">Challenges</div>
+                <div><input type="checkbox" name="auto4" value="Golf6">A Codewebbies WIKI</div>
+                <div><input type="checkbox" name="auto5" value="Golf7">No improvement needed!</div>
                 <input class="inputten" type="text" name="anders"
-                    placeholder="Other: please tell us what's on your mind..."><br><br>
+                    placeholder="Other: please tell us what's on your mind...">
                 <input type="submit" class="submit">
                 </select>
             </form>
