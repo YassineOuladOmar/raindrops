@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raindrops</title>
+    <style>
+        #test {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            right: 0;
+            bottom: 0;
+        }
+
+        header {
+            height: 150px;
+            opacity: 0.6;
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+        }
+
+        .form {
+            max-width: 500px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.603);
+            /* opacity: 0.6; */
+            /* width: 60%; */
+            display: block;
+            margin: auto;
+            border-radius: 50px;
+            color: white;
+            padding: 50px;
+        }
+
+        input {
+            /* width: 100%; */
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .inputten {
+            width: 100%;
+        }
+
+        select {
+            text-align-last: center;
+            border-radius: 10px;
+        }
+
+        .submit {
+            color: aliceblue;
+            background-color: brown;
+            border-style: none;
+            height: 30px;
+            width: 200px;
+            border-radius: 20px;
+            display: block;
+            margin: auto;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="raindrops.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <header>
+        <h1>Techgrounds</h1>
+    </header>
+    <main>
+        <div class="form">
+            <form>
+                Naam<br>
+                <input class="inputten" type="text" name="Naam" placeholder="what is your name?"><br><br>
+                E-Mail<br>
+                <input class="inputten" type="text" name="E-mail"
+                    placeholder="Please enter your current e-mail address"><br><br>
+                Age (optional)<br>
+                <input class="inputten" type="text" name="Age (optional)" placeholder="Please enter your age"><br><br>
+                <p> What is your current employment status?</p>
+                <span>
+                    <p>Click or tap on it to choose</p>
+                </span>
+                <select class="inputten" name="Select an option">
+                    <option value="Golf1">Select an option</option>
+                    <option value="Golf2">Golf2</option>
+                    <option value="Golf3">Golf3</option>
+                    <option value="Golf4">Golf4</option>
+                    <option value="Golf5">Golf5</option>
+                    <option value="Golf6">Golf6</option>
+                    <option value="Golf7">Golf7</option>
+                </select>
+                <p>Would you recommend Techgrounds to a riend?</p>
+                <input type="radio" name="gender" value="For sure!">For sure!<br>
+                <input type="radio" name="gender" value="Maybe">Maybe<br>
+                <input type="radio" name="gender" value="">No<br>
+                <input class="inputten" type="text" name="other"
+                    placeholder="Other: please tell us what's on your mind..."><br><br>
+                <p>What interests you most?</p>
+                <span>
+                    <p>(click or tap on it to choose)</p>
+                </span>
+                <select class="inputten" name="Select an option">
+                    <option value="MercedesA">Select an option</option>
+                    <option value="MercedesB">Mercedes B</option>
+                    <option value="MercedesC">Mercedes C</option>
+                    <option value="MercedesE">Mercedes E</option>
+                    <option value="MercedesG">Mercedes G</option>
+                    <option value="MercedesS">Mercedes S</option>
+                    <option value="MercedesGLE">Mercedes GLE</option>
+                    <option value="MercedesGLA">Mercedes GLA</option>
+                </select><br><br>
+                <p>Which of the following needs improvements?</p>
+                <span>
+                    <p>(Check all that apply)</p>
+                </span>
+                <input type="checkbox" name="auto1" value="mercedesA">Personal guidance<br>
+                <input type="checkbox" name="auto2" value="mercedesGLA">Homework<br>
+                <input type="checkbox" name="auto3" value="MercedesS">Challenges<br>
+                <input type="checkbox" name="auto4" value="Golf6">A Codewebbies WIKI<br>
+                <input type="checkbox" name="auto5" value="Golf7">No improvement needed!<br>
+                <input class="inputten" type="text" name="anders"
+                    placeholder="Other: please tell us what's on your mind..."><br><br>
+                <input type="submit" class="submit">
+                </select>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
